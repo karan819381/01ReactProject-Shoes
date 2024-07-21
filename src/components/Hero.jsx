@@ -1,4 +1,7 @@
 import React from "react";
+import shoe_image from '../assets/shoe_image.png'
+import flipkart from '../assets/flipkart.png'
+import amazon from '../assets/amazon.png'
 
 const Hero = () => {
   return (
@@ -15,12 +18,12 @@ const Hero = () => {
         </button>
             <p className="text-xs my-3">Also Available On</p>
         <div className="flex items-center gap-3">
-            <img src="./src/assets/amazon.png" alt="amazon_img" />
-            <img src="./src/assets/flipkart.png" alt="flipkart_img" />
+            <img src={amazon} alt="amazon_img" />
+            <img src={flipkart} alt="flipkart_img" />
         </div>
       </section>
       <section className="flex-1">
-        <img src="./src/assets/shoe_image.png" alt="shoes_img" />
+        <img src={shoe_image} alt="shoes_img" />
       </section>
     </main>
   );
